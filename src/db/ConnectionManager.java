@@ -5,7 +5,7 @@ public class ConnectionManager {
 		return UserConnection.getInstance();
 	}
 	
-	public static ConcertConnection tour(){
+	public static ConcertConnection concert(){
 		return ConcertConnection.getInstance();
 	}
 }

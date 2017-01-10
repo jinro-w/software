@@ -87,7 +87,7 @@ public class ConcertConnection extends SQLConnection {
 	 * @param concertID コンサートID
 	 * @return 受注コード
 	 */
-	public String getRegistID(String userID,String concertID){
+	public String getRegistCode(String userID,String concertID){
 		ResultSet rs = execute("select * from "+ registInfoTable_ + " where userID = \""+ userID +"\"");
 		String result = "";
 		try {
@@ -121,12 +121,32 @@ public class ConcertConnection extends SQLConnection {
 	 * @param concertID コンサートのID
 	 * @return 成功または失敗
 	 */
-	public boolean deleteTour(String userID,String concertID){
+	public boolean deleteConcert(String userID,String concertID){
 		boolean canDelete = false;
 		if(getUserConcerts(userID).contains(concertID)){
 			execute("delete from "+registInfoTable_ +" where userID = \""+userID+"\" AND concertID = \""+concertID+"\"");
 			canDelete = true;
 		}
 		return canDelete;
+	}
+	
+	/**
+	 * 欲しい情報を取得(tourTable のみ)
+	 * @param id 	コンサートのID
+	 * @param field コンサートの欲しい情報（e.g. 値段= "price"）
+	 * @return
+	 */
+	public String getConcertInfo(String id, String field){
+		String name = null;
+		ResultSet re = execute("select * from "+concertTable_+" where id = \'"+ id + "\'");
+		try {
+			name = re.getString(field);
+		} catch (SQLException e) {
+			// TODO 自動生成されたcatch ブロック
+			e.printStackTrace();
+		}finally{
+			if (re != null ) { try {re.close(); } catch (SQLException e) {e.printStackTrace();} }
+		}
+		return name;
 	}
 }

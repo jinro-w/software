@@ -1,5 +1,4 @@
 package db;
-import java.sql.SQLException;
 
 
 public class test {
@@ -28,8 +27,9 @@ public class test {
 			}
 			System.out.println(ccon.getUserConcerts("watanabe"));
 			System.out.println(ccon.getRegistID("watanabe", "3"));
+			System.out.println(ccon.canRegistConcert("4"));
 
-			ccon.deleteTour("watanabe", "3");
+			ccon.deleteConcert("watanabe", "3");
 			System.out.println(ccon.getUserConcerts("watanabe"));
 	}
 

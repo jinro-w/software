@@ -6,13 +6,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<center>
-<br><br><br>
-<FONT size="6">セッションエラーが起きました．<br>
-最初からやり直してください．</FONT>
-<br>
-<br>
-<a href="./concert.jsp"> HOME へ</a>
-</center>
+	<center>
+		<br>
+		<br>
+		<br> <FONT size="6">セッションエラーが起きました．<br>
+			最初からやり直してください．
+		</FONT> <br> <br> <a href="./concert.jsp"> HOME へ</a>
+	</center>
 </body>
 </html>
