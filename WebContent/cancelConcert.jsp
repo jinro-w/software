@@ -10,8 +10,7 @@
 </head>
 <body>
 	<center>
-		<br> <br> <FONT size="6">以下の内容のコンサートをキャンセル</FONT> <br>
-		<br>
+		<br> <br> <FONT size="6">以下の内容のコンサートをキャンセル</FONT> <br><br>
 		<%
 			String userID = (String) session.getAttribute("userID");
 			String concertID = (String) session.getAttribute("concertID");

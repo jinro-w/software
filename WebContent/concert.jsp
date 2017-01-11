@@ -11,7 +11,7 @@
 	<br>
 	<br>
 	<Div Align="right">
-		<FONT size=\"6\"><a href="./userLogin.jsp"> ユーザログインはこちら</a></FONT>
+		<FONT size="6"><a href="./userLogin.jsp"> ユーザログインはこちら</a></FONT>
 	</Div>
 	<center>
 		<br> <br> <br> <br> <br>

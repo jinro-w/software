@@ -13,22 +13,15 @@ String previousPage = null;
 %>
 <body>
 	<center>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br> <FONT size="6">ログインしてください</FONT><br>
-		<br>
-		<br>
+		<br> <br> <br> <br> <br> <br> 
+		<FONT size="6">ログインしてください</FONT>
+		<br> <br> <br>
 		<form method=post action="userLogin.jsp">
-			ID:<input type="text" name="userID"><br> PASS:<input
-				type=password name="passwd" size=16 maxlength=12> <input
-				type=submit value="ロ
-グイン">
+			ID:<input type="text" name="userID"><br> 
+			PASS:<input type=password name="passwd" size=16 maxlength=12><br>PASS:<input type=password name="passwd" size=16 maxlength=12><br>
+				<input type=submit value="ログイン">
 		</form>
 		<%
-			request.setCharacterEncoding("UTF-8");
 			String previous = request.getParameter("previousPage");
 			if (previous != null) {
 				previousPage = previous;
@@ -54,10 +47,8 @@ String previousPage = null;
 				}
 			}
 		%>
-		<br>
-		<br> <a href="./newAccount.jsp?previousPage=<%=nextPage%>">
-			新規アカウント登録はこちら</a> <br>
-		<br> <a href="./concert.jsp">ホームへ</a>
+		<br> <br> <a href="./newAccount.jsp?previousPage=<%=nextPage%>"> 新規アカウント登録はこちら</a>
+		<br> <br> <a href="./concert.jsp">ホームへ</a>
 	</center>
 </body>
 </html>

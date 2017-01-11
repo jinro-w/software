@@ -26,7 +26,7 @@ public class test {
 				ccon.registConcert(user, "15");
 			}
 			System.out.println(ccon.getUserConcerts("watanabe"));
-			System.out.println(ccon.getRegistID("watanabe", "3"));
+			System.out.println(ccon.getRegistCode("watanabe", "3"));
 			System.out.println(ccon.canRegistConcert("4"));
 
 			ccon.deleteConcert("watanabe", "3");
