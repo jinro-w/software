@@ -18,7 +18,7 @@ String previousPage = null;
 		<br> <br> <br>
 		<form method=post action="userLogin.jsp">
 			ID:<input type="text" name="userID"><br> 
-			PASS:<input type=password name="passwd" size=16 maxlength=12><br>PASS:<input type=password name="passwd" size=16 maxlength=12><br>
+			PASS:<input type=password name="passwd" size=16 maxlength=12><br>
 				<input type=submit value="ƒƒOƒCƒ“">
 		</form>
 		<%
